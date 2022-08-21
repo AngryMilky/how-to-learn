@@ -249,7 +249,7 @@
   font-weight: normal;
   line-height: 51px;
   margin-top: 70px;
-  text-align: center;  
+  text-align: center;
   z-index: 1;
   position: relative;
 }
@@ -354,7 +354,6 @@
 }
 
 .footer__columns {
-  margin: 0;
   padding: 0;
   width: 90%;
   display: flex;
