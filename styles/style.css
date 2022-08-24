@@ -117,27 +117,27 @@
   font-weight: normal;
   line-height: 1.2;
   color: #2f80ed;
-  margin: 0 auto;
+  margin: 0;
 }
 
 
 .two-columns__main-text {
   width: 80%;
   min-width: 784px;
-
+  
 }
 
 .two-columns__paragraph {
   font-size: 24px;
   font-weight: normal;
   line-height: 34px;
-  margin-bottom: 30px;
-  margin-top: 0;
+  margin-bottom: 30px; 
+  margin-top: 0; 
 
 }
 
-/* чтобы убрать последний отступ */
-.two-columns__main-text :last-child {
+/* чтобы убрать нижний отступ */
+.two-columns__paragraph:last-child {
   margin-bottom: 0;
 }
 
@@ -167,6 +167,7 @@
   font-size: 60px;
   font-weight: 600;
   line-height: 1.15;
+  
 }
 
 
@@ -205,8 +206,9 @@
 
 }
 
-
 .table__heading {
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 24px;
   font-weight: 600;
   line-height: 1.15;
@@ -215,6 +217,7 @@
 
 .table__text {
   margin-top: 20px;
+  margin-bottom: 0;
   font-size: 18px;
   font-weight: normal;
   line-height: 1.2;
@@ -294,15 +297,18 @@
   background-color: #1f1f1f;
   position: relative;
   overflow: hidden;
+  z-index: 0;
 }
 
 .kaufman__triangle {
   background-image: url(../images/kaufman-triangle.svg);
+  background-size: cover;
   width: 877px;
   height: 877px;
   position: absolute;
   right: -210px;
   top: 0;
+  z-index: -1;
 
 }
 
@@ -312,7 +318,7 @@
   font-size: 60px;
   font-weight: 600;
   line-height: 1.15;
-  z-index: 1;
+  z-index: 3;
 }
 
 .section-subtitle_theme_dark {
@@ -321,7 +327,7 @@
   font-size: 24px;
   font-weight: normal;
   line-height: 34px;
-  z-index: 1;
+  z-index: 3;
 }
 
 
@@ -368,8 +374,8 @@
   display: flex;
   justify-content: center;
   color: #ffffff;
-
-}
+  box-sizing: border-box;
+  }
 
 .footer__columns {
   margin: 0 auto;
@@ -377,8 +383,6 @@
   width: 90%;
   display: flex;
   justify-content: space-between;
-
-
 
 }
 
@@ -405,10 +409,8 @@
 
 
 .footer__column_content_info {
-  max-width: 140px;
-  width: 100%;
+  margin:0; 
   display: flex;
-  margin: 0 auto;
   flex-direction: column;
 
 }
@@ -432,8 +434,6 @@
 }
 
 .footer__column_content_social {
-  max-width: 120px;
-  width: 100%;
   display: flex;
   margin: 0;
   flex-direction: column;
