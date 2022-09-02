@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./vendor/normalize.css" />
   <link rel="stylesheet" href="./pages/index.css" />
   <title>Научиться учиться</title>
 </head>
@@ -19,7 +18,7 @@
         жизни?
         <a class="header__link link" href="#" target="_blank">Узнать &rarr;</a>
       </p>
-      <div class="header__square-pic"></div>
+      <div class="header__square-pic rotation"></div>
       <img class="header__main-illustration" src="./images/header-image.png" alt="картинка в шапке">
     </header>
     <!--основное содержимое страницы-->
@@ -30,9 +29,8 @@
           <h2 class="two-columns__brief"> Главные проблемы в обучении</h2>
           <div class="two-columns__main-text">
             <p class="two-columns__paragraph">Ни в школе, ни в институте нас не учат тому, как правильно изучать
-              материал.Мы готовимся к экзаменам и учим билеты. Мы тренируемся решать однообразные задачи, чтобы лучше
-              сдать тест,
-              но часто в итоге это не дает нам реального знания. Зубрежка быстро выветривается и не приносит пользы.
+              материал. Мы готовимся к экзаменам и учим билеты. Мы тренируемся решать однообразные задачи, чтобы лучше
+              сдать тест, но часто в итоге это не дает нам реального знания. Зубрежка быстро выветривается и не приносит пользы.
             </p>
             <p class="two-columns__paragraph"> <span class="two-columns__span-accent">Вывод: </span> учиться тоже нужно
               уметь, но почему-то этому мало где учат. Что с этим делать?
@@ -190,7 +188,7 @@
       <section class="kaufman">
         <h2 class="section-title section-title_theme_dark "> Принципы обучения</h2>
         <p class="section-subtitle section-subtitle_theme_dark"> от Джоша Кауфмана</p>
-        <div class="kaufman__triangle "></div>
+        <div class="kaufman__triangle rotation"></div>
 
         <ul class="table list table_theme_dark ">
           <li class="table__cell table__cell_theme_dark">
@@ -287,7 +285,7 @@
         </div>
         <div class="footer__column  footer__column_content_social">
           <h2 class="footer__column-heading">Cоцсети</h2>
-          <div class="footer__column-links">
+          <nav class="footer__column-links">
             <a class=" footer__column-link link" href="#" target="_blank">
               <img class="footer__social-icon" src="./images/facebook_color_white.svg"
                 alt="Иконка Facebook">Facebook</a>
@@ -296,7 +294,7 @@
             <a class=" footer__column-link link" href="#" target="_blank">
               <img class="footer__social-icon" src="./images/instagram_color_white.svg"
                 alt="Иконка Instagram">Instagram</a>
-          </div>
+          </nav>
         </div>
       </div>
     </footer>
